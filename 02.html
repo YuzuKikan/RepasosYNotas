@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Ejemplo práctico de aplicación del posicionamiento fijo" />
+  <title>Página web en mantenimiento</title>
+  <script type="text/javascript">
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      /* var h = 0;
+      var m = 0;
+      var s = 0; */
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+      t = setTimeout("startTime()", 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: NotoSans-alguno;
+      src: url(tipo/Noto_Sans/NotoSans-Medium.ttf);
+    }
+
+    #contenedor {
+      border: black solid 1px;
+      border-radius: 10px;
+      /* redondeo del borde */
+      background-color: white;
+      margin: 50px auto;
+      /* espacio entre la página y el cuerpo, 50px pone + espacio arriba */
+      width: 600px;
+      /* anchura cuerpo */
+      height: 400px;
+      /* altura cuerpo */
+      font-family: 'Times New Roman', Times, serif;
+      /* tipo fuente */
+      padding: 0em 2em 2em 2em;
+      /* espacio entre el contenido y los bordes */
+    }
+
+    h1 {
+      font-size: 3em;
+      /* tamaño fuente */
+      text-align: center;
+      /* posicion fuente */
+    }
+
+    h2 {
+      font-size: 2em;
+      /* tamaño fuente */
+      font-style: italic;
+      /* estilo letra */
+    }
+
+    body {
+      background: #fafafa;
+      /* color */
+    }
+
+    p {
+      line-height: 1.5em;
+      /* interlineado */
+      font-size: 16px;
+      /* tamaño fuente */
+    }
+  </style>
+</head>
+
+<body onload="startTime()">
+  <div id="contenedor">
+    <h1>Página web en construcción</h1>
+    <p>
+      “Lo sentimos pero no hemos encontrado ninguna forma más original de
+      decirte que estamos trabajando en ello.”
+    </p>
+    <h2>Web disponible en:</h2>
+    <div id="txt"></div>
+    <p>00:00:00</p>
+  </div>
+
+</body>
+
+</html>

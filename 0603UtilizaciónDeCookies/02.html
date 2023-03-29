@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Cookies</title>
+  <script>
+    let contador = 0;
+    function manageCookies(name) {
+      if (!name || name == "") {
+        console.log("Debe introducir un nombre para crear la cookie");
+        return;
+      }
+      document.cookie = name; 'path=/';
+    }
+    function cuenta() {
+      ++contador;
+      console.los(`${contador}`);
+    }
+    
+  </script>
+</head>
+
+<body>
+  <form>
+    <label for="name">Nombre de </label>
+    <input type="text" name="name" id="name" />
+    <input type="button" value="Registrar" onclick="manageCookies(document.getElementById('name').value), cuenta()" />
+  </form>
+</body>
+
+</html>

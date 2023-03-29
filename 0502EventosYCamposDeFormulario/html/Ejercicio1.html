@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="../js/Ej1.js"></script>
+  <style>
+    
+    td{padding: 0.5em;}
+    table{border: 2px solid black}
+  </style>
+</head>
+
+<body>
+  <h1>Ejercicio 1 - Manejar valores de los widgets</h1>
+
+  <table>
+    <tr>
+      <td>
+        <label for="nombre"><strong>Nombre</strong> </label>
+      </td>
+      <td>
+        <input type="text" id="nombre" name="nombre" /><span id="spanNombre"></span>
+      </td>
+    </tr>
+    <tr>
+      <form id="cursos">
+        <td>
+          <label for="cursos"><strong>Cursos que le interesan</strong> </label>
+        </td>
+        <td>
+          <input type="checkbox" name="cursos" title="cursos" value="C#" />C#
+          <input type="checkbox" name="cursos" title="cursos" value="Java" />Java
+          <input type="checkbox" name="cursos" title="cursos" value="PHP" />PHP
+          <input type="checkbox" name="cursos" title="cursos" value="Python" />Python
+          <span id="spanCursos"></span>
+        </td>
+    </tr>
+    </form>
+    <tr>
+      <td>
+        <label for="edad"><strong>Edad</strong> </label>
+      </td>
+      <td>
+        <select name="edad" id="edad">
+          <option value="0">--Selecciona una opcion--</option>
+          <option value="Entre 0 y 18">Entre 0 y 18</option>
+          <option value="Entre 18 y 60">Entre 18 y 60</option>
+          <option value="Mas de 60">Más de 60</option>
+        </select><span id="spanEdad"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="socio"><strong>¿Eres socio?</strong> </label>
+      </td>
+      <td>
+        <input type="radio" name="socio" id="si" value="si" title="si" />Si
+        <input type="radio" name="socio" id="no" value="no" title="no" checked />No
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td><button onclick="mostrarDatos()">Mostrar Datos</button></td>
+    </tr>
+  </table>
+  <span id="mostrar"></span>
+</body>
+        
+<!-- 
+Shakira - La Tortura ft. Alejandro Sanz // Lyrics + Español // Video Official
+Gloria Trevi — Esa Hembra Es Mala [Letra]
+Ricardo Arjona - Fuiste tú feat. Gaby Moreno (Video Oficial)
+
+https://youtu.be/I9cCPQVPv8o
+https://youtu.be/p1XMzw8dYQo
+https://youtu.be/u-x1DRjFA5k
+https://youtu.be/QrOe2h9RtWI
+https://youtu.be/qExd-3oCTl4
+https://youtu.be/bESGLojNYSo
+https://youtu.be/O1uGdRA73MQ
+https://youtu.be/tAp9BKosZXs
+https://youtu.be/PIb6AZdTr-A
+https://youtu.be/TJAfLE39ZZ8
+https://youtu.be/5NV6Rdv1a3I
+https://youtu.be/PZqx-lMZHM0
+https://youtu.be/ZbZSe6N_BXs
+
+-->
+</html>

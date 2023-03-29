@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/ej1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table,tr,td, th{
+            padding: 10px;
+        }
+        th{
+            text-align: right;
+        }
+        .error{
+            color: red;
+        }
+            </style>
+</head>
+<body>
+        <h3>Ejercicio 1 - Manejar valores de los widgets</h3>             
+        <table>
+            <tr>
+                <th>Nombre:</th>
+                <td> <input type="text" name="nombre" id="nombre">
+                    <span class="error" id="errorNombre"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Cursos que le interesan:</th>
+                <td> 
+                    C#<input type="checkbox" name="cursos[]" id="C#" value="C#">
+                    &nbspJava<input type="checkbox" name="cursos[]" id="Java" value="Java">
+                    &nbspPHP<input type="checkbox" name="cursos[]" id="PHP" value="PHP">
+                    &nbsp Python<input type="checkbox" name="cursos[]" id="Python" value="Python">
+                    <span class="error" id="errorCurso"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Edad:</th>
+                <td>
+                    <select name="edad" id="edad">
+                        <option value="">-- Selecciona una opcion --</option>
+                        <option value="10-20">Entre 10-20</option>
+                        <option value="21-40">Entre 21-40</option>
+                        <option value="41-60">Entre 41-60</option>
+                        <option value="61-80">Entre 61-80</option>
+                    </select>
+                    <span class="error" id="errorEdad"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>¿Eres socio?:</th>
+                <td> 
+                    <input type="radio" name="eleccion" id="si" >SI
+                    <input type="radio" name="eleccion" id="no" checked="checked">NO
+                    <span class="error" id="errorSeleccion"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" id="ejecutar">Mostrar Datos</button></td>
+            </tr>
+        </table>
+
+        <h3><u>DATOS DEL FORMULARIO</u></h3>
+        <p>
+            Nombre: <span id="nom"></span><br/>
+            Cursos: <span id="cur"></span><br/>
+            Edad: <span id="eda"></span><br/>
+            ¿Eres socio?: <span id="soc"></span><br/>
+        </p>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document1</title>
+  <style>
+    fieldset {
+      border: 2px solid #444444;
+      box-shadow: 0 0 3px rgb(57, 69, 92);
+    }
+
+    legend {
+      font-weight: bolder;
+      background-color: white;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <form action="#" method="POST" enctype="multipart/form-data">
+    <table>
+      <tr>
+        <td>
+          <fieldset>
+            <legend>Datos personales</legend>
+            <table>
+              <tr>
+                <td><label for="nom">Nombre:</label></td>
+                <td>
+                  <input id="nom" type="text" name="nombre" value="" size="25" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="ape">Apellido:</label></td>
+                <td>
+                  <input id="ape" type="text" name="apellido" value="" size="25" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="mail">Email:</label></td>
+                <td>
+                  <input id="mail" type="text" name="correo" value="" size="25" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td>
+                  <input type="number" id="edad" name="edad" min="18" required />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="mat">Fecha de matriculacion:</label></td>
+                <td>
+                  <input type="datetime" id="mat" name="matriculacion" min="0" placeholder="dd/mm/aaaa" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="edad">Nivel de inglés:</label></td>
+                <td>
+                  ninguno
+                  <input type="range" name="edad" id="edad" min="18" max="100" value="25" step="3" />
+                  nativo
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <fieldset>
+            <legend>Aficiones</legend>
+
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" id="mus" name="hoby[]" value="musica" />
+                  <label for="mus">Música</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="eco" name="hoby[]" value="economia" />
+                  <label for="eco">Economía</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="cin" name="hoby[]" value="cine" />
+                  <label for="cin">Cine</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="dep" name="hoby[]" value="deporte" />
+                  <label for="dep">Deporte</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="sal" name="hoby[]" value="salud" />
+                  <label for="sal">Salud</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="tel" name="hoby[]" value="TV" />
+                  <label for="tel">Televisión</label>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" />
+          <input type="reset" value="Resetear" />
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

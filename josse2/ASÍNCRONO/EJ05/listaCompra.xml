@@ -1,0 +1,15 @@
+<lista>
+  <verduleria>
+    <producto cantidad="2" unidad="Kg" imagen="patatas.jpg">Patatas</producto>
+    <producto cantidad="1" unidad="Kg"  imagen="zanahorias.jpg">Zanahorias</producto>
+    <producto cantidad="500" unidad="Gramos"  imagen="pimientosrojos.jpg">Pimientos Rojos</producto>
+  </verduleria>
+  <carniceria>
+    <producto cantidad="500" unidad="Gramos" imagen="carne.jpg">Carne</producto>
+    <producto cantidad="600" unidad="Gramos"  imagen="pollo.jpg">Pollo</producto>
+  </carniceria>
+  <lacteos>
+    <producto cantidad="8" unidad="unidades"  imagen="yogourt.jpg">Yogour</producto>
+    <producto cantidad="6" unidad="Litro"  imagen="leche.jpg">Leche</producto>
+  </lacteos>
+</lista>

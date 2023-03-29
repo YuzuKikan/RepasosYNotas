@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/ej2.js"></script>
+    <style>
+        div{
+            
+            width: 400px;
+            margin: 0 auto;
+        }
+        table{
+            margin: 0 auto;
+        }
+        input::-webkit-outer-spin-button,::-webkit-inner-spin-button{
+            appearance: none;
+        }
+        input:invalid{
+            border-color: red;}
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Ejercicio 2 - Calcular total</h1>
+        <table>
+            <tr><th>Unidades:</th><td><input type="number" name="unidades" id="unidades" required></td></tr>
+            <tr><th>Precio:</th><td><input type="number" name="precio" id="precio" required></td></tr>
+            <tr><th>Total:</th><td><output id="total"></output></td></tr>
+        </table>
+    </div>
+</body>
+</html>

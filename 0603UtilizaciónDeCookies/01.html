@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Manage Cookies</title>
+  <script src='js/funcionesCookies.js'></script>
+</head>
+
+<body>
+"<form>",
+"<label for='name'>Nombre:</label>",
+"<input type='text' name='name' id='name' /><br /><br />",
+"<label for='value'>Valor:</label>",
+"<input type='text' name='value' id='value' /> <br /><br />",
+"<label for='days'>Días Vigentes:</label>",
+"<input type='text' name='days' id='days' /><br /><br />",
+
+"<input type='button' value='Crear/Modificar' onclick='manageCookies(document.getElementById('name').value, document.getElementById('value').value, document.getElementById('days').value)' />",
+"<input type='button' value='Ver' onclick='console.log(readCookies(document.getElementById('name').value))' /><br /><br />",
+"<input type='button' value='Borrar Cookies' onclick='deAllCookies()' /><br /><br />",
+"<input type='button' value='Listado Cookies' onclick='console.log(document.cookie)' /><br /><br />",
+"<input type='button' value='Borrar Cookie Especifica' onclick='manageCookies(document.getElementById('name').value, document.getElementById('value').value, -1)' /><br /><br />",
+
+"</form>",
+</body>
+
+</html>
+
+<!-- 
+    https://cybmeta.com/cookies-en-javascript
+  https://aprende-web.net/javascript/js14_3.php
+  https://developer.mozilla.org/es/docs/Web/API/Document/cookie
+  https://github.com/fryntiz/javascript-ejercicios-resueltos
+  https://uniwebsidad.com/libros/javascript/capitulo-11
+  https://www.desarrollolibre.net/blog/javascript/primeros-pasos-con-las-cookies-en-javascript
+  https://digitalnestweb.com/ejercicios-resueltos-javascript-condicionales/
+ -->

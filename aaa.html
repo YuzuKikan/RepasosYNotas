@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título de la página</title>
+  <script src="aaa.js"></script>
+</head>
+
+<body>
+  <h1>Documento de examen</h1>
+
+  <form>
+
+    <input type="text" name="name" id="id" value="suValor" minlength="5" maxlength="20">
+    <input type="button" id="crearPag" name="crearPag" value="crearPágina">
+    <input type="button" name="cerrarPag" value="borrarPag">
+    <input type="button" name="aumPag" value="aumentaPag">
+    <input type="button" name="minimPag" value="minimPag">
+    <input type="button" name="movePag" value="movePag">
+
+    <div id="iframes">
+      <div>
+        <a href="otrapagina.html" target="marco" style="padding: 80px">Cargar otra pagina en marco IFRAME</a>
+        <br>
+        <iframe src="pagina.html" name="marco" style="background-color: rgb(253, 247, 194)"></iframe>
+      </div>
+
+      <div>
+        <a href="otrapagina.html" target="obj" style="padding: 80px">Cargar otra pagina en marco OBJECT</a>
+        <br>
+        <object data="pagina.html" name="obj" type="text/html" style="background-color: rgb(253, 247, 194)"></object>
+      </div>
+    </div>
+
+    <!-- <div id="video">
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          
+          <iframe width="420" height="315" id="gmap_canvas" frameborder="0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3034.9175827232743!2d-3.6539728!3d40.4770883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422eb792599fd3%3A0xc4360953fbd1af89!2sIES%20Rosa%20Chacel!5e0!3m2!1ses!2ses!4v1669202002610!5m2!1ses!2ses"></iframe>
+    </div> -->
+
+
+    <!-- <div>
+      <iframe id="headerframe" name="headerframe" src="header.html" frameborder="0"></iframe>
+    </div>
+
+    <div>
+      <iframe id="panelframe" name="panelframe" src="panel.html" frameborder="0"></iframe>
+      <iframe id="principalframe" name="principalframe" src="principal.html" frameborder="0"></iframe>
+    </div>
+
+    <div>
+      <iframe id="footerframe" name="footerframe" src="footer.html" frameborder="0"></iframe>
+    </div> -->
+<!-- <a href="principal.html" target="principalframe">Pagina principal</a> <br>
+    <a href="cambiarcolor.html" target="principalframe">Cambiar color</a> -->
+
+    <table>
+      <tr>
+        <td><label for="unidades"><strong>Unidades:</strong></label></td>
+        <td>
+          <input onchange="calcularPrecio()" type="number" name="unidades" id="unidades" min="1" step="1" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="precio"><strong>Precio:</strong></label></td>
+        <td>
+          <input onchange="calcularPrecio()" type="number" name="precio" id="precio" min="0" step="0.01" />
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Total:</strong></td>
+        <td><output id="total">0,00 €</output></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

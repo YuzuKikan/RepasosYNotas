@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/06.js" defer></script>
+    <style>
+      td {
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+      }
+      div {
+        height: 20px;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+      }
+      button {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      #red {
+        background-color: red;
+        width: 10%;
+      }
+      #yellow {
+        background-color: yellow;
+        width: 10%;
+      }
+      #green {
+        background-color: green;
+        width: 10%;
+      }
+      #blue {
+        background-color: blue;
+        width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="red" onclick="elegirColor('red')"></div>
+      <div id="yellow" onclick="elegirColor('yellow')"></div>
+      <div id="green" onclick="elegirColor('green')"></div>
+      <div id="blue" onclick="elegirColor('blue')"></div>
+    </div>
+    <p class="container">
+      Color seleccionado:&nbsp;<span id="colorSeleccionado"> red</span>
+    </p>
+    <p class="container">
+      Color activo:&nbsp; <span id="colorActivo"> NO</span>
+    </p>
+    <button onclick="limpiarTabla()">Limpiar tabla</button>
+    <span id="tabla"></span>
+  </body>
+</html>
